@@ -1,0 +1,21 @@
+# Tworzenie struktury plików i katalogów
+import os
+
+
+if not os.path.exists("magazine"):
+    os.makedirs("magazine")
+
+# Tworzenie plików
+file_names = ["Order.py", "Product.py", "utils.py"]
+for file_name in file_names:
+    with open(f"magazine/{file_name}", "w") as f:
+        f.write("# Placeholder for file content")
+
+
+from . import utils
+
+# Order.py
+from . import utils
+
+
+from magazine.Product import Product
